@@ -7,8 +7,8 @@ import { fetchCountries } from '../src/fetchCountries';
 
 const DEBOUNCE_DELAY = 300;
 const inputRef = document.querySelector('#search-box');
-const ulRef = document.querySelector('.country-list');
-const divRef = document.querySelector('.country-info');
+export const ulRef = document.querySelector('.country-list');
+export const divRef = document.querySelector('.country-info');
 
 inputRef.addEventListener('input', debounce(onCreate, DEBOUNCE_DELAY));
 
