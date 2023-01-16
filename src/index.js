@@ -15,6 +15,7 @@ function fetchCountries() {
   const inputValue = inputRef.value;
   if (inputValue.trim() === '') {
     ulRef.innerHTML = '';
+    divRef.innerHTML = '';
     return;
   }
   countriesApi(inputValue)
