@@ -6,9 +6,9 @@ export function fetchCountries(name) {
     `${BASE_URL}${name}?fields=name,capital,population,flags,languages`
   ).then(resp => {
     if (!resp.ok) {
-      Notiflix.Notify.failure('Oops, there is no country with that name', {
-        timeout: 2000,
-      });
+      // Notiflix.Notify.failure('Oops, there is no country with that name');
+      ulRef.innerHTML = '';
+      divRef.innerHTML = '';
     }
     return resp.json();
   });

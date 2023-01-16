@@ -33,7 +33,7 @@ function onCreate() {
         divRef.innerHTML = '';
         ulRef.innerHTML = '';
       }
-      if (data.length < 10) {
+      if (data.length <= 10) {
         ulRef.innerHTML = createMarcup(data);
         divRef.innerHTML = '';
       }
